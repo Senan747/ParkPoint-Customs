@@ -1,4 +1,4 @@
-import React, {
+import {
   createContext,
   useContext,
   useState,
@@ -35,8 +35,22 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const isAuthenticated = !!user;
 
   const signIn = async (email: string, password: string) => {
-    const mockUser = { id: "1", email, name: "John Doe" }; // Mock data
-    setUser(mockUser);
+    const mockUser = {
+      id: "1",
+      email: "johndoe@example.com",
+      name: "John Doe",
+      password: "helloJohn",
+    };
+
+    if (email === mockUser.email && password === mockUser.password) {
+      setUser({
+        id: mockUser.id,
+        email: mockUser.email,
+        name: mockUser.name,
+      });
+    } else {
+      throw new Error("Invalid email or password");
+    }
   };
 
   const signOut = () => {

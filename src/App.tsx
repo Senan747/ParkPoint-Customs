@@ -1,10 +1,12 @@
-import Button from "./components/Button";
+import { BrowserRouter } from "react-router-dom";
+import "./assets/styles/global.css";
+import Router from "./router";
 
 function App() {
   return (
-    <>
-      <Button text="hello" onClick={() => console.log("hello")} />
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   );
 }
 
