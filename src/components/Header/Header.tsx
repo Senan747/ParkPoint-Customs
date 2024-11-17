@@ -1,11 +1,13 @@
-import phone from "./../../assets/svg/phone.svg";
+import phone from "@/assets/svg/phone.svg";
 import styles from "./Header.module.scss";
+import logo from "@/assets/svg/logo.svg";
 
 function Header() {
   return (
     <div className={styles.header}>
-      <div>
-        <span className={styles.title}>PeakPoint Customs</span>
+      <div className={styles.logo_container}>
+        <img src={logo} alt="" />
+        <p className={styles.title}>PeakPoint Customs</p>
       </div>
       <div>
         <ul>
