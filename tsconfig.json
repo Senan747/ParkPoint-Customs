@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "types": ["node"],
-    "baseUrl": "./",
     "jsx": "react-jsx",
-    "paths": {
-      "@/*": ["src/*"],
-      "@assets/*": ["src/assets/*"]
-    }
-  }
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.test.tsx"]
 }
