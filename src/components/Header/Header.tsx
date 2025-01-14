@@ -7,7 +7,7 @@ function Header() {
     <div className={styles.header}>
       <div className={styles.logo_container}>
         <img src={logo} alt="" />
-        <p className={styles.title}>PeakPoint Customs</p>
+        <p className={styles.title}>ParkPoint Customs</p>
       </div>
       <div>
         <ul>

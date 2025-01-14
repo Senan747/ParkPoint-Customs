@@ -76,8 +76,10 @@ function Home() {
         </div>
       </div>
       <div className={styles.second_part}>
-        <div>
-          <p>Gömrükdə Avtomobil Parkı Üçün Asan Bələdçi</p>
+        <div className={styles.second_part_header}>
+          <p className={styles.second_part_header_title}>
+            Gömrükdə Avtomobil Parkı Üçün Asan Bələdçi
+          </p>
         </div>
         <div className={styles.cycle_total_container}>
           <div>
@@ -87,7 +89,7 @@ function Home() {
               </p>
               <p>1</p>
             </div>
-            <div>
+            <div className={styles.additional_text}>
               <p>
                 Park etmək istədiyiniz gömrük məntəqəsini və tarixləri seçərək
                 mövcud park variantlarına baxın.
@@ -101,9 +103,12 @@ function Home() {
               </p>
               <p>2</p>
             </div>
-            <div>
-              Park variantlarını diqqətlə araşdırın və sizin üçün ən uyğun olanı
-              seçin.
+            <div className={styles.additional_text}>
+              <p>
+                {" "}
+                Park variantlarını diqqətlə araşdırın və sizin üçün ən uyğun
+                olanı seçin.
+              </p>
             </div>
           </div>
           <div>
@@ -113,7 +118,7 @@ function Home() {
               </p>
               <p>3</p>
             </div>
-            <div>
+            <div className={styles.additional_text}>
               <p>
                 Avtomobilinizin nömrə nişanı və digər məlumatları daxil edərək
                 rezervasiya edin.
@@ -127,7 +132,7 @@ function Home() {
               </p>
               <p>4</p>
             </div>
-            <div>
+            <div className={styles.additional_text}>
               <p>
                 Ödənişi təhlükəsiz şəkildə təsdiqləyin və e-poçtunuza təsdiq
                 bildirişi alın.
