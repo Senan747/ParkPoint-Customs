@@ -106,10 +106,6 @@ button {
   border-radius: 4px;
 }
 
-button:hover {
-  background-color: darken(var(--primary-color), 10%);
-}
-
 .container {
   width: 100%;
   max-width: 1200px;
