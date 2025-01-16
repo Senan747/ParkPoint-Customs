@@ -13,11 +13,8 @@ import apple from "@/assets/svg/apple.svg";
 import facebook from "@/assets/svg/facebook.svg";
 import google from "@/assets/svg/google.svg";
 import { useNavigate } from "react-router-dom";
-
-interface LoginPopupProps {
-  open: boolean;
-  close: () => void;
-}
+import Button from "../Button";
+import { LoginPopupProps } from "../../types";
 
 function LoginPopup({ open, close }: LoginPopupProps) {
   const [showPassword, setShowPassword] = useState(false);
@@ -71,7 +68,7 @@ function LoginPopup({ open, close }: LoginPopupProps) {
           />
         </FormControl>
         <p className={styles.forget_password_text}>Şifrəni unutmusunuz?</p>
-        <button>Daxil ol</button>
+        <Button onClick={() => {}} text="Daxil ol" />
         <div className={styles.form_footer}>
           <p className={styles.login_options}>
             və ya aşağıdakılar ilə daxil ol

@@ -11,6 +11,7 @@ import TextField from "@mui/material/TextField";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
 import React, { useState } from "react";
+import Button from "../../components/Button";
 
 function Auth() {
   const [showPassword, setShowPassword] = useState(false);
@@ -145,7 +146,7 @@ function Auth() {
             <img src={facebook} alt="Facebook ilə qeydiyyat" />
             <img src={apple} alt="Apple ilə qeydiyyat" />
           </div>
-          <button onClick={handleSubmit}>Qeydiyyatdan keç</button>
+          <Button onClick={handleSubmit} text="Qeydiyyatdan keç" />
         </div>
       </div>
     </div>

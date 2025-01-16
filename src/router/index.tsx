@@ -2,13 +2,7 @@ import { ReactNode } from "react";
 import { Route, Routes } from "react-router-dom";
 import { routes } from "./router";
 import Header from "../components/Header";
-
-interface RouteConfig {
-  path: string;
-  title?: string;
-  element: ReactNode;
-  children?: RouteConfig[];
-}
+import { RouteConfig } from "../types";
 
 const renderRoutes = (routes: RouteConfig[]) =>
   routes.map(({ path, element, children }, index) => (

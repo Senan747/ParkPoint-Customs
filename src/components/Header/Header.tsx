@@ -4,6 +4,7 @@ import logo from "@/assets/svg/logo.svg";
 import { useState } from "react";
 import LoginPopup from "../Login";
 import { useNavigate } from "react-router-dom";
+import Button from "../Button";
 
 function Header() {
   const [showLoginPopup, setShowLoginPopup] = useState(false);
@@ -34,7 +35,7 @@ function Header() {
             <span>777</span>
           </li>
           <li>
-            <button onClick={handleLoginPopup}>Daxil ol</button>
+            <Button onClick={handleLoginPopup} text="Daxil ol" />
           </li>
         </ul>
       </div>

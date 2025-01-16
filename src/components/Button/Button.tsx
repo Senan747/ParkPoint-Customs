@@ -1,10 +1,5 @@
 import styles from "./Button.module.css";
-
-interface ButtonProps {
-  text: string;
-  onClick: () => void;
-  disabled?: boolean;
-}
+import { ButtonProps } from "../../types";
 
 function Button({ text, onClick, disabled = false }: ButtonProps) {
   return (

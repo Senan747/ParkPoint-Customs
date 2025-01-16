@@ -15,7 +15,7 @@ import styles from "./Home.module.scss";
 
 function Home() {
   return (
-    <div>
+    <div className={styles.total_container}>
       <div className={styles.first_part}>
         <div>
           <div>
@@ -29,46 +29,43 @@ function Home() {
             </p>
           </div>
           <div className={styles.form}>
-            <div>Saatlıq/Gündəlik</div>
-            <div>Aylıq</div>
-            <div>
-              <FormControl>
-                <TextField
-                  id="outlined-basic"
-                  label="Kod"
-                  variant="outlined"
-                  placeholder="abc"
-                />
-              </FormControl>
-
-              <FormControl sx={{ width: 200 }}>
-                <InputLabel id="demo-simple-select-label">Age</InputLabel>
-                <Select
-                  labelId="demo-simple-select-label"
-                  id="demo-simple-select"
-                  // value={age}
-                  label="Age"
-                >
-                  <MenuItem value="1">1</MenuItem>
-                </Select>
-              </FormControl>
-              <div>
-                <LocalizationProvider dateAdapter={AdapterDayjs}>
-                  <DemoContainer components={["DateTimePicker"]}>
-                    <DateTimePicker label="Başlanğıc tarix" />
-                  </DemoContainer>
-                </LocalizationProvider>
-                <LocalizationProvider dateAdapter={AdapterDayjs}>
-                  <DemoContainer components={["DateTimePicker"]}>
-                    <DateTimePicker label="Bitiş tarix" />
-                  </DemoContainer>
-                </LocalizationProvider>
-              </div>
-              <Button
-                onClick={() => console.log("show")}
-                text="Dayanacaq yerlərini göstərin"
+            <FormControl>
+              <TextField
+                id="outlined-basic"
+                label="Kod"
+                variant="outlined"
+                placeholder="Kodu daxil edin"
               />
+            </FormControl>
+
+            <FormControl sx={{ width: "100%" }}>
+              <InputLabel id="demo-simple-select-label">
+                Gömrük Postu
+              </InputLabel>
+              <Select
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                label="Gömrük Postu"
+              >
+                <MenuItem value="1">1</MenuItem>
+              </Select>
+            </FormControl>
+            <div>
+              <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DemoContainer components={["DateTimePicker"]}>
+                  <DateTimePicker label="Başlanğıc tarix" />
+                </DemoContainer>
+              </LocalizationProvider>
+              <LocalizationProvider dateAdapter={AdapterDayjs}>
+                <DemoContainer components={["DateTimePicker"]}>
+                  <DateTimePicker label="Bitiş tarix" />
+                </DemoContainer>
+              </LocalizationProvider>
             </div>
+            <Button
+              onClick={() => console.log("show")}
+              text="Dayanacaq yerlərini göstərin"
+            />
           </div>
         </div>
         <div>
