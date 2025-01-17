@@ -1,0 +1,20 @@
+.login_container {
+  background: white;
+  padding: 56px 35px 36px 35px;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  position: absolute;
+  height: 483px;
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  button {
+    width: 100%;
+    height: 50px;
+  }
+}

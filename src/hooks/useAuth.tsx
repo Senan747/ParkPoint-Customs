@@ -20,14 +20,18 @@ export const useAuth = (): AuthContextType => {
 export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [user, setUser] = useState<User | null>(null);
 
+  console.log(user);
+
   const isAuthenticated = !!user;
+
+  console.log(isAuthenticated)
 
   const signIn = async (email: string, password: string) => {
     const mockUser = {
       id: "1",
-      email: "johndoe@example.com",
+      email: "admin@gmail.com",
       name: "John Doe",
-      password: "helloJohn",
+      password: "admin",
     };
 
     if (email === mockUser.email && password === mockUser.password) {

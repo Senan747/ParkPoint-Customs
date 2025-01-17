@@ -21,6 +21,7 @@
     text-align: right;
     text-decoration-skip-ink: none;
     cursor: pointer;
+    margin-bottom: 22px;
 
     &:hover {
       color: #2b82f1;
@@ -30,7 +31,6 @@
   button {
     width: 100%;
     height: 50px;
-    margin-top: 22px;
   }
 
   .form_footer {

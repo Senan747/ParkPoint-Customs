@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { routes } from "./router";
 import Header from "../components/Header";
 import { RouteConfig } from "../types";
+import { AuthProvider } from "../hooks/useAuth";
 
 const renderRoutes = (routes: RouteConfig[]) =>
   routes.map(({ path, element, children }, index) => (
@@ -15,8 +16,10 @@ const Router = () => {
 
   return (
     <>
-      <Header />
-      <Routes>{pageRoutes}</Routes>
+      <AuthProvider>
+        <Header />
+        <Routes>{pageRoutes}</Routes>
+      </AuthProvider>
     </>
   );
 };
